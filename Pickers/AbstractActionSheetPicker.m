@@ -670,6 +670,7 @@ CG_INLINE BOOL isIPhone4() {
     if (self.pickerBackgroundColor) {
         _actionSheet.bgView.backgroundColor = self.pickerBackgroundColor;
     }
+    _actionSheet.supportedInterfaceOrientations = self.supportedInterfaceOrientations;
 
     [self presentActionSheet:_actionSheet];
 
